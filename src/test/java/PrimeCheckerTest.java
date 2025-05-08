@@ -23,4 +23,9 @@ public class PrimeCheckerTest {
     void testNonPrime() {
         assertFalse(checker.isPrime(9)); // covers: enters for loop and returns false
     }
+
+    @Test
+    void testPrimeNumber() {
+        assertTrue(checker.isPrime(7)); // covers: full path to return true after loop
+    }
 }
